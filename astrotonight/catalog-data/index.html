@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AstroTonight Catalog Data and License</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <header>
+    <a class="site" href="/">jmpar apps</a>
+    <h1>Catalog Data and License</h1>
+    <p class="lead">Last updated July 2026</p>
+  </header>
+
+  <main>
+    <p>AstroTonight's deep-sky object catalog is built on <a href="https://github.com/mattiaverga/OpenNGC">OpenNGC</a>
+    by Mattia Verga, licensed under
+    <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a>.
+    That license lets anyone use, adapt, and redistribute the data — including
+    commercially — provided adaptations are credited and shared under the same
+    terms. This page exists to satisfy that: it documents exactly what AstroTonight
+    changed, and makes the source data and our modifications available under
+    the same CC BY-SA 4.0 license.</p>
+
+    <h2>Original source data</h2>
+    <p>These are the unmodified OpenNGC files bundled in the app, exactly as
+    published by the original author:</p>
+    <div class="files">
+      <a href="data/NGC.csv">NGC.csv</a>
+      <a href="data/addendum.csv">addendum.csv</a>
+    </div>
+
+    <h2>What AstroTonight changes at import</h2>
+    <p>AstroTonight does not alter these source files. Instead, at catalog import
+    time it applies a documented set of corrections and additions — cross-
+    referencing other public catalogs, fixing a small number of errors, and
+    supplementing common names. The complete, structured list of every change
+    is published here:</p>
+    <div class="files">
+      <a href="data/modifications.json">modifications.json</a>
+    </div>
+
+    <p>In summary, the modifications are:</p>
+    <ul>
+      <li><strong>Caldwell catalogue numbers</strong> — OpenNGC does not include
+        Caldwell numbers; 105 are added by cross-reference, including two
+        (C37, C50) redirected to the surviving object where OpenNGC's own data
+        marks the traditional designation as a duplicate.</li>
+      <li><strong>Messier 102</strong> — OpenNGC marks M102 as a duplicate of
+        M101 with no data of its own. Modern consensus (SIMBAD/NED) identifies
+        it as NGC&nbsp;5866; that assignment is added back.</li>
+      <li><strong>IC 1005's NGC number</strong> — OpenNGC marks NGC&nbsp;5620 as
+        a duplicate of IC&nbsp;1005, and the surviving entry carries no NGC
+        cross-reference of its own; the NGC designation is recorded on it so
+        the object appears under both catalogues.</li>
+      <li><strong>One type-code correction</strong> — NGC&nbsp;6611 (M16) is
+        tagged as a nebula in OpenNGC; it is the star cluster (IC&nbsp;4703 is
+        the nebula it illuminates), matching SIMBAD/NED classification.</li>
+      <li><strong>Common names</strong> — 45 Messier objects, 28 Caldwell
+        objects, and 42 other objects gain common names absent from OpenNGC
+        (sourced from Wikipedia's Messier/Caldwell tables, or well-established
+        astrophotography usage), appended after any name OpenNGC already lists.</li>
+      <li><strong>Herschel 400 program</strong> — encoded as a set of 402 NGC
+        numbers (the program has 400 entries; three are traditionally listed
+        under a pair of numbers for the same object). Six further entries are
+        redirected to their surviving non-duplicate counterpart where OpenNGC
+        marks the traditional number as a duplicate.</li>
+      <li><strong>Cross-catalog merges</strong> — a small number of Sharpless
+        and RCW entries (6 total) are identified as the same physical object as
+        an existing NGC/IC entry and merged rather than listed twice, where the
+        automatic cross-reference detection didn't catch it.</li>
+    </ul>
+
+    <h2>License</h2>
+    <p>This page and the files linked above are licensed
+    <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a>,
+    consistent with the original OpenNGC license. Attribution: catalog data
+    originally by Mattia Verga (OpenNGC); modifications by AstroTonight.</p>
+
+    <h2>Other catalogs used</h2>
+    <p>AstroTonight also bundles data from the Sharpless, RCW, Lynds (LDN), and
+    Barnard catalogues, obtained via the
+    <a href="https://cds.unistra.fr/vizier-org/licences_vizier.html">VizieR catalogue access tool</a>,
+    CDS, Strasbourg, and Digitized Sky Survey imagery via the CDS
+    <a href="https://alasky.cds.unistra.fr/hips-image-services/hips2fits">hips2fits</a>
+    service. Full citations for each are listed in the app's About screen.</p>
+
+    <h2>Contact</h2>
+    <p>Questions about this data or its licensing can be sent to
+    <a href="mailto:support@jmpar.com?subject=AstroTonight%20catalog%20data">support@jmpar.com</a>.</p>
+    <p>Catalogue data: OpenNGC, CC BY-SA 4.0. Modifications by AstroTonight.</p>
+  </main>
+
+  <footer><a href="/">jmpar.com</a></footer>
+</body>
+</html>
