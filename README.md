@@ -8,8 +8,8 @@ Plain HTML and one shared `style.css`; no build step and no third-party scripts,
 | URL | File | Used for |
 |---|---|---|
 | https://jmpar.com/ | `index.html` | App list |
-| https://jmpar.com/spectrum-viewer/ | `spectrum-viewer/index.html` | App Store Support URL |
-| https://jmpar.com/spectrum-viewer/privacy/ | `spectrum-viewer/privacy/index.html` | App Store Privacy Policy URL |
+| https://jmpar.com/radio-spectrum/ | `radio-spectrum/index.html` | App Store Support URL |
+| https://jmpar.com/radio-spectrum/privacy/ | `radio-spectrum/privacy/index.html` | App Store Privacy Policy URL |
 
 Add each new app as `<app>/index.html` and `<app>/privacy/index.html`, plus a card on the home page.
 A privacy page must match what the app actually does, so update it if an app starts using the
