@@ -1,6 +1,6 @@
 # jmpar.com
 
-Support and privacy pages for the jmpar iOS apps, served by GitHub Pages at https://jmpar.com.
+Support and privacy pages for the jmpar apps (iOS and Mac), served by GitHub Pages at https://jmpar.com.
 Plain HTML and one shared `style.css`; no build step and no third-party scripts, fonts or CDNs.
 
 ## Pages
@@ -10,6 +10,8 @@ Plain HTML and one shared `style.css`; no build step and no third-party scripts,
 | https://jmpar.com/ | `index.html` | App list |
 | https://jmpar.com/radio-spectrum/ | `radio-spectrum/index.html` | App Store Support URL |
 | https://jmpar.com/radio-spectrum/privacy/ | `radio-spectrum/privacy/index.html` | App Store Privacy Policy URL |
+| https://jmpar.com/wk1-converter/ | `wk1-converter/index.html` | Mac app support page |
+| https://jmpar.com/wk1-converter/privacy/ | `wk1-converter/privacy/index.html` | Mac app privacy policy |
 
 Add each new app as `<app>/index.html` and `<app>/privacy/index.html`, plus a card on the home page.
 A privacy page must match what the app actually does, so update it if an app starts using the

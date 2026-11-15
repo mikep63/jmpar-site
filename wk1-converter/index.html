@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>WK1 Converter Support</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <header>
+    <a class="site" href="/">jmpar apps</a>
+    <h1>WK1 Converter</h1>
+    <p class="lead">Open old Lotus 1-2-3 spreadsheets on a Mac, look through them, and save them as CSV or Excel.</p>
+  </header>
+
+  <main>
+    <h2>Support</h2>
+    <p>For questions or problems, email
+      <a href="mailto:support@jmpar.com?subject=WK1%20Converter">support@jmpar.com</a>.
+      If a file doesn't open or converts wrongly, please say which program wrote it (Lotus 1-2-3 and its
+      release, if you know) and what you expected to see. Only attach the file if you're happy to share
+      what's in it.</p>
+
+    <h2>What it does</h2>
+    <ul>
+      <li>Opens Lotus 1-2-3 <code>.WK1</code> files: double-click one in Finder, use File ▸ Open, or drop it on the
+        Dock icon. The sheet shows in a grid, and nothing is written until you export it.</li>
+      <li>Exports as CSV (⌘E) or as an Excel workbook (⇧⌘E).</li>
+      <li>File ▸ Convert Files converts a whole batch: drop in files or folders, choose CSV or Excel, and save
+        next to each original or into one folder.</li>
+      <li>Select rows and press ⌘C to copy them, ready to paste into Excel or Numbers.</li>
+      <li>Includes <code>wk1-converter</code>, a command-line tool for scripts.</li>
+    </ul>
+
+    <h2>What it reads</h2>
+    <p>Numbers, text, and for a formula cell the result Lotus last stored. Text is read the way DOS Lotus
+      stored it (code page 437), so accented letters come through.</p>
+    <p>View ▸ Show Formulas (experimental) shows the formulas themselves where every part of them can be read,
+      and exporting with it on writes them as real Excel formulas. A list of every formula, and why any was
+      left as a value, is saved next to the export. It was checked on real Lotus files: of 1,418 formulas,
+      1,340 convert, and each recalculates to the result Lotus stored.</p>
+
+    <h2>What it does not keep</h2>
+    <p>Number formats, dates (they come through as Lotus date numbers), column widths, and charts. It reads
+      <code>.WK1</code> files only, not the older <code>.WKS</code> or the newer <code>.WK3</code> and
+      <code>.WK4</code> formats.</p>
+
+    <h2>Requirements</h2>
+    <p>macOS 13 Ventura or later, on Apple silicon or Intel Macs.</p>
+
+    <h2>Windows version</h2>
+    <p>For Windows, <a href="https://mikep63.github.io/wk1-converter/">wk1-converter</a> reads the same files
+      and writes the same CSV and Excel output.</p>
+
+    <h2>Important</h2>
+    <p>WK1 Converter is not affiliated with or endorsed by IBM or Lotus. Lotus and 1-2-3 are trademarks of
+      their owners. Check converted files against the originals before relying on them, especially formulas.</p>
+
+    <h2>Privacy</h2>
+    <p>WK1 Converter collects no data. Read the <a href="/wk1-converter/privacy/">privacy policy</a>.</p>
+  </main>
+
+  <footer><a href="/">jmpar.com</a></footer>
+</body>
+</html>
