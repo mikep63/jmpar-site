@@ -12,6 +12,9 @@ Plain HTML and one shared `style.css`; no build step and no third-party scripts,
 | https://jmpar.com/radio-spectrum/privacy/ | `radio-spectrum/privacy/index.html` | App Store Privacy Policy URL |
 | https://jmpar.com/wk1-converter/ | `wk1-converter/index.html` | Mac app support page |
 | https://jmpar.com/wk1-converter/privacy/ | `wk1-converter/privacy/index.html` | Mac app privacy policy |
+| https://jmpar.com/astrotonight/ | `astrotonight/index.html` | DeepSky Tonight App Store Support URL |
+| https://jmpar.com/astrotonight/privacy/ | `astrotonight/privacy/index.html` | DeepSky Tonight App Store Privacy Policy URL |
+| https://jmpar.com/astrotonight/catalog-data/ | `astrotonight/catalog-data/index.html` | DeepSky Tonight catalogue credits and CC BY-SA modifications |
 
 Add each new app as `<app>/index.html` and `<app>/privacy/index.html`, plus a card on the home page.
 A privacy page must match what the app actually does, so update it if an app starts using the
